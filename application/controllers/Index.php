@@ -2,7 +2,7 @@
 /**
 *
 */
-class home extends CI_Controller
+class Index extends CI_Controller
 {
     function index()
     {
