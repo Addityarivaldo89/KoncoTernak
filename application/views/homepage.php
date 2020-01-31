@@ -1,133 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Charset untuk scale ukuran relatif halaman sesuai device -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
-
     <title>KoncoTernak</title>
-    
-    <!-- Script marquee judul halaman, jika browser support js -->
-    <SCRIPT LANGUAGE="JavaScript">
-    var scrl = "KoncoTernak | Solusi Peternak Indonesia | ";
-    function scrlsts() {
-      scrl = scrl.substring(1, scrl.length) + scrl.substring(0, 1);
-      document.title = scrl;
-      setTimeout("scrlsts()", 300);
-    }
-    </script>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <link href="<?php echo base_url('assets/res/css/bootstrap.min.css') ?>" rel="stylesheet">
-    <script src="<?php echo base_url('assets/res/js/jquery.min.js') ?>"></script>
-    <script src="<?php echo base_url('assets/res/js/bootstrap.min.js') ?>"></script>
-    <script src="<?php echo base_url('assets/res/js/jarallax.min.js') ?>"></script>
-    <script src="<?php echo base_url('assets/res/js/popper.min.js') ?>"></script>
-    
-    <style>
-      .tinggi50 {
-        height: 50vw;
-      }
-
-      .carousel-caption {
-        width:100%;
-        height:100%;
-        left:0 !important;
-      }
-
-      .hrt { 
-            position: relative; 
-            top: 20px; 
-            border: none; 
-            height: 3px; 
-            background: black; 
-            margin-bottom: 50px; 
-      } 
-        
-      .dropdown-toggle::after {
-        content: none;
-      }
-      
-      .carousel-item > img {
-        width: 100%;
-        height: 75vh;
-        object-fit: cover;
-      }
-      
- 
-    </style>
+    <?php $this->load->view("_parts/head.php") ?>
   </head>
 
   <!-- onLoad, fungsi js untuk eksekusi fungsi yang dibuat sebelumnya saat page dimuat-->
   <body onLoad="scrlsts()">
-    
-    <!-- Parent navbar dan propertinya -->
-    <nav class="navbar fixed-top navbar-expand-md bg-konco shadow-sm py-0">
-      <div class="container-fluid">
 
-        <!-- Link menuju homepage berupa icon/logo/gambar -->
-        <a href="/konco/" class="navbar-brand d-none d-sm-block w-50">
-            <img src="<?php echo base_url('assets/images/Logo.png') ?>" height="40" alt="CoolBrand">
-        </a>
-
-        <!-- navbar item untuk dropdown menu -->
-        <div class="nav navbar-nav dropdown" id="navbarTogglerDemo2">
-
-            <!-- [TEMP] <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Messages</a> -->
-            <!-- Dropdown menu berupa button -->
-            <a href="#" class="btn bg-konco nav-link dropdown-toggle py-0" data-toggle="dropdown" type="button">
-              <img src="<?php echo base_url('assets/images/dropdown.png') ?>" width="24">
-                <div style="color: black; font-size: 0.6rem;">Menu</div>
-              </a>
-              <!-- Bagian item dari dropdown menu, bisa link individual atau list. -->
-              <div class="dropdown-menu dropdown-menu-center">
-                <a href="#" class="dropdown-item text-center">ARTIKEL</a>
-                <a href="#" class="dropdown-item text-center">JUAL-BELI</a>
-              </div>
-        </div>
-   
-      
-        <!-- navbar item untuk Form query search dan submit button -->
-        <div class="collapse navbar-collapse" style="margin-left: 25%;" id="navbarCollapse">
-            <form class="form-inline">
-              <!-- Form -->
-              <div class="input-group">                    
-                  <input type="text" class="form-control" placeholder="Search">
-                  <div class="input-group-append">
-                      <a href="#" type="button" class="btn btn-secondary"><img src="<?php echo base_url('assets/images/find.png') ?>" height="20"><i class="fa fa-search"></i></a>
-                  </div>
-              </div>
-          </form>
-
-          <!-- Button submit -->
-          <div class="navbar-nav">
-              <a href="/konco/registrasi" class="btn btn-outline-dark mx-2">Daftar</a>
-              <a href="#" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" type="button">Masuk</a>
-              <ul class="dropdown-menu dropdown-menu-right mt-0">
-                       <li class="px-3 py-2">
-                           <form class="form" role="form">
-                                <div class="form-group">
-                                    <input id="emailInput" placeholder="Email" class="form-control form-control-sm" type="text" required="">
-                                </div>
-                                <div class="form-group">
-                                    <input id="passwordInput" placeholder="Password" class="form-control form-control-sm" type="password" required="">
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-konco btn-block">Masuk</button>
-                                </div>
-                                <div class="form-group text-center">
-                                    <small><a href="#" data-toggle="modal" data-target="#modalPassword">Lupa password?</a></small>
-                                </div>
-                            </form>
-                        </li>
-                    </ul>
-          </div>
-    </div>
-  </div>
-    </nav>
+  <?php $this->load->view("_parts/navbar.php") ?>
 
   <!--      LETAKKAN KONTEN DISINI        -->
     <div id="carousel" class="carousel slide" data-ride="carousel">
