@@ -23,37 +23,39 @@
                     ? <a href="#" class="font-weight-bold text-black-50">Masuk</a>
                 </div>
                   <hr style="width:95%; background-color:#a1a1a1 !important; height:1px;"/>
-                  <div class="ml-3">
-                    <div class="font-weight-lighter mb-1" style="font-size: 0.8rem">
-                      Nama Asli
+                  <form action="reg.php" method="post">
+                    <div class="ml-3">
+                      <div class="font-weight-lighter mb-1" style="font-size: 0.8rem">
+                        Nama Asli
+                      </div>
+                      <div class="form-group mb-2">
+                          <input style="height: 2.5rem" id="inputnama" placeholder="Nama Asli" class="form-control form-control-sm" type="text" required="true">
+                      </div>
+                      <div class="font-weight-lighter mb-1" style="font-size: 0.8rem">
+                        Email 
+                      </div>
+                      <div class="form-group">
+                        <input style="height: 2.5rem" id="inputemail" placeholder="Email" class="form-control form-control-sm" type="text" required="true">
+                      </div>
+                      <div class="font-weight-lighter mb-1" style="font-size: 0.8rem">
+                        Kata Sandi 
+                      </div>
+                      <div class="form-group">
+                        <input style="height: 2.5rem" id="inputpassword" placeholder="Kata Sandi" class="form-control form-control-sm" type="password" required="true">
+                      </div>
+                      <div class="font-weight-lighter mb-1" style="font-size: 0.8rem">
+                        Konfirmasi Kata Sandi 
+                      </div>
+                      <div class="form-group">
+                        <input style="height: 2.5rem" id="inputpassword" placeholder="Ketik Ulang Kata Sandi" class="form-control form-control-sm" type="password" required="true">
+                      </div>
                     </div>
-                    <div class="form-group mb-2">
-                        <input style="height: 2.5rem" id="inputnama" placeholder="Nama Asli" class="form-control form-control-sm" type="text" required="true">
-                    </div>
-                    <div class="font-weight-lighter mb-1" style="font-size: 0.8rem">
-                      Email 
-                    </div>
-                    <div class="form-group">
-                      <input style="height: 2.5rem" id="inputemail" placeholder="Email" class="form-control form-control-sm" type="text" required="true">
-                    </div>
-                    <div class="font-weight-lighter mb-1" style="font-size: 0.8rem">
-                      Kata Sandi 
-                    </div>
-                    <div class="form-group">
-                      <input style="height: 2.5rem" id="inputpassword" placeholder="Kata Sandi" class="form-control form-control-sm" type="password" required="true">
-                    </div>
-                    <div class="font-weight-lighter mb-1" style="font-size: 0.8rem">
-                      Konfirmasi Kata Sandi 
-                    </div>
-                    <div class="form-group">
-                      <input style="height: 2.5rem" id="inputpassword" placeholder="Ketik Ulang Kata Sandi" class="form-control form-control-sm" type="password" required="true">
+                    <button type="submit" class="btn btn-konco mb-2" style="position: relative; left: 5%; width: 21rem">Daftar</button>
+                    <div class="text-secondary text-center" style="font-size: 0.8rem">
+                      Dengan mendaftar, saya menyetujui <a href="#" style="color: #000" class="font-weight-bolder">Syarat dan Ketentuan</a> 
                     </div>
                   </div>
-                  <a href="#" type="submit" class="btn btn-konco mb-2" style="position: relative; left: 5%; width: 21rem">Daftar</a>
-                  <div class="text-secondary text-center" style="font-size: 0.8rem">
-                    Dengan mendaftar, saya menyetujui <a href="#" style="color: #000" class="font-weight-bolder">Syarat dan Ketentuan</a> 
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
             <div class="col" style="background-color: #e9e9e9;">
