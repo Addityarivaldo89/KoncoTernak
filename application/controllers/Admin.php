@@ -12,7 +12,7 @@ class Admin extends CI_Controller {
 	public function index()
 	{
         // load view admin/overview.php
-        $data['total_transaksi'] = $this->M_Admin->hitTransaksi();
+        $data['total_data'] = $this->M_Admin->hitData();
         $this->load->view("admin/overview.php",$data);
 	}
 }

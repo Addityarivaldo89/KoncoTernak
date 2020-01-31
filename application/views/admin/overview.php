@@ -21,7 +21,13 @@
         silahkan hilangkan komentar (//) di tag PHP di bawah.
         -->
 		<?php $this->load->view("admin/_partials/breadcrumb.php") ?>
-
+        
+        <?php
+            if($total_data)
+            {
+            foreach ($total_data as $d) 
+            { 
+        ?>
 		<!-- Icon Cards-->
 		<div class="row">
 			<div class="col-xl-3 col-sm-6 mb-3">
@@ -30,7 +36,7 @@
 				<div class="card-body-icon">
 					<i class="fas fa-fw fa-comments"></i>
 				</div>
-                <div class="mr-5"><?php echo $total_transaksi ?> Transaksi</div>
+                <div class="mr-5"><?php echo $d->total ?> Transaksi</div>
 				</div>
 				<a class="card-footer text-white clearfix small z-1" href="#">
 				<span class="float-left">View Details</span>
@@ -46,7 +52,7 @@
 				<div class="card-body-icon">
 					<i class="fas fa-fw fa-list"></i>
 				</div>
-				<div class="mr-5">11 New Tasks!</div>
+				<div class="mr-5"><?php echo $d->user ?> User</div>
 				</div>
 				<a class="card-footer text-white clearfix small z-1" href="#">
 				<span class="float-left">View Details</span>
@@ -88,7 +94,8 @@
 				</a>
 			</div>
 			</div>
-		</div>
+        </div>
+            <?php } } ?>
 
 		<!-- Area Chart Example-->
 		<!-- <div class="card mb-3">
