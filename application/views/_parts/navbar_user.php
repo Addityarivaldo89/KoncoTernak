@@ -13,7 +13,7 @@
               </a>
               <!-- Bagian item dari dropdown menu, bisa link individual atau list. -->
               <div class="dropdown-menu dropdown-menu-left">
-                <a href="#" class="dropdown-item text-center">ARTIKEL</a>
+                <a href="/konco/artikel" class="dropdown-item text-center">ARTIKEL</a>
                 <a href="#" class="dropdown-item text-center">JUAL-BELI</a>
               </div>
         </div>
@@ -39,20 +39,40 @@
           <!-- Button submit -->
           <div class="navbar-nav ml-2">
                 <a href="#" class="btn btn-secondary" data-toggle="dropdown" type="button">Profil <img src="<?php echo base_url('assets/images/profile/userdummy/profile.jpg') ?>" style="border-radius: 50%; width: 1.5rem ; height: 1.5rem;"></a>
-                <ul class="dropdown-menu dropdown-menu-right mt-0" style="width: 15rem">
-                        <li class="px-3 py-2">
-                            <div class=" text-center" style="margin-left: auto; margin-right: auto;">
-                            <a href="#" data-toggle="dropdown" type="button">
-                                <img class=" my-2" src="<?php echo base_url('assets/images/profile/userdummy/profile.jpg') ?>" style="border-radius: 50%; width: 5rem ; height: 5rem; box-shadow: 0px 0px 5px 2px #aaaaaa"></a>
-                                <br />
-                                <a href="#">Edit Profil</a>
-                            </div>
-                            <hr>
-                            <div>
-                                <a type="button" data-toggle="dropdown" class="btn btn-outline-konco text-left" style="width:100%;">Transaksi </a>
-                            </div>
-                        </li>
-                </ul>
+                <ul class="dropdown-menu dropdown-menu-right mt-0 shadow-sm" style="border-radius: 0px 0px 5px 5px; background-color: #e9e9e9; width: 14rem">
+                  <li class="px-3 py-2 border-bottom">
+                    <div class=" text-center" style="margin-left: auto; margin-right: auto;">
+                      <a href="#" data-toggle="dropdown" type="button">
+                      <img class=" my-0" src="<?php echo base_url('assets/images/profile/userdummy/profile.jpg') ?>" style="border-radius: 50%; width: 5rem ; height: 5rem; box-shadow: 0px 0px 5px 2px #aaaaaa"></a>
+                      <br />
+                      <?php $user = "Dummy Sutikna";
+                        echo $user;
+                      ?>
+                      <br />
+                      <a href="#" >Edit Profil</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="w-100"style="border-bottom: 2px solid #aaa;">
+                      
+                    </div>
+                  </li>
+                  <a type="button" href="#" class="dropdown btn btn-outline-konco w-100 text-left" data-toggle="dropdown">Transaksi</a>
+                    <ul class="dropdown-menu multi-level w-100" style="background-color: #e9e9e9; border-radius: 0px 0px 5px 5px">
+                        <li><a type="button" href="#" class="btn btn-outline-konco w-100 text-left" data-toggle="dropdown">Histori</a></li>
+
+                        <li><a type="button" href="#" class="btn btn-outline-konco w-100 text-left" data-toggle="dropdown">Menunggu Pembayaran</a></li>
+                        <li class="divider"></li>
+                    </ul>
+                    <li>
+                          <div class="btn-group">
+                            <a type="button" href="#" class="btn btn-outline-konco w-100 text-left d-inline" data-toggle="dropdown">Daftar Produk</a> 
+                            <a class="btn btn-secondary" style="color: #e9e9e9; border-radius: 0px; width: 6.2rem;">+ Produk</a>
+                          </div>
+                    </li>
+                    <li>
+                    <a href="_parts/navbar.php?session=<?php echo 0 ?>" class="text-center btn btn-outline-konco w-100">Keluar<img src="<?php echo base_url('assets/images/exit.png') ?>" style="margin-left: 0.5vw; width: 1vw; height: 1vw;"></a>
+                    </li>
           </div>
     </div>
   </div>
