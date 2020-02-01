@@ -29,7 +29,7 @@
             <form class="form-inline">
               <!-- Form -->
               <div class="input-group">                    
-                  <input type="text" class="form-control content" name="cari" placeholder="cari" style="width: 43rem; margin-left: 13rem">
+                  <input type="text" class="form-control content" name="cari" placeholder="cari" style="width: 53vw; margin-left: 13vw">
                   <div class="input-group-append">
                       <a href="#" type="button" class="btn btn-secondary"><img src="<?php echo base_url('assets/images/find.png') ?>" height="20"></a>
                   </div>
@@ -39,9 +39,18 @@
           <!-- Button submit -->
           <div class="navbar-nav ml-2">
                 <a href="#" class="btn btn-secondary" data-toggle="dropdown" type="button">Profil <img src="<?php echo base_url('assets/images/profile/userdummy/profile.jpg') ?>" style="border-radius: 50%; width: 1.5rem ; height: 1.5rem;"></a>
-                <ul class="dropdown-menu dropdown-menu-right mt-0">
+                <ul class="dropdown-menu dropdown-menu-right mt-0" style="width: 15rem">
                         <li class="px-3 py-2">
-                            <div class=" text-left">
+                            <div class=" text-center" style="margin-left: auto; margin-right: auto;">
+                            <a href="#" data-toggle="dropdown" type="button">
+                                <img class=" my-2" src="<?php echo base_url('assets/images/profile/userdummy/profile.jpg') ?>" style="border-radius: 50%; width: 5rem ; height: 5rem; box-shadow: 0px 0px 5px 2px #aaaaaa"></a>
+                                <br />
+                                <a href="#">Edit Profil</a>
+                            </div>
+                            <hr>
+                            <div>
+                                <a class="btn btn-outline-secondary text-left" style="width:100%">Transaksi</a>
+                            </div>
                         </li>
                 </ul>
           </div>
