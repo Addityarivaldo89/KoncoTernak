@@ -49,7 +49,7 @@
                             </div>
                             <hr>
                             <div>
-                                <a class="btn btn-outline-konco text-left" style="width:100%;">Transaksi </a>
+                                <a type="button" data-toggle="dropdown" class="btn btn-outline-konco text-left" style="width:100%;">Transaksi </a>
                             </div>
                         </li>
                 </ul>
