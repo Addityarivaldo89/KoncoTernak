@@ -29,35 +29,21 @@
             <form class="form-inline">
               <!-- Form -->
               <div class="input-group">                    
-                  <input type="text" class="form-control content" name="cari" placeholder="cari" style="width: 55vw; margin-left: 6.9vw">
+                  <input type="text" class="form-control content" name="cari" placeholder="cari" style="width: 43rem; margin-left: 13rem">
                   <div class="input-group-append">
-                      <a href="#" type="button" class="btn btn-secondary"><img src="<?php echo base_url('assets/images/find.png') ?>" height="20"><i class="fa fa-search"></i></a>
+                      <a href="#" type="button" class="btn btn-secondary"><img src="<?php echo base_url('assets/images/find.png') ?>" height="20"></a>
                   </div>
               </div>
           </form>
 
           <!-- Button submit -->
-          <div class="navbar-nav">
-              <a href="/konco/registrasi" class="btn btn-outline-dark mx-2">Daftar</a>
-              <a href="#" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" type="button">Masuk</a>
-              <ul class="dropdown-menu dropdown-menu-right mt-0">
-                       <li class="px-3 py-2">
-                           <form class="form" role="form">
-                                <div class="form-group">
-                                    <input id="emailInput" placeholder="Email" class="form-control form-control-sm" type="text" required="">
-                                </div>
-                                <div class="form-group">
-                                    <input id="passwordInput" placeholder="Password" class="form-control form-control-sm" type="password" required="">
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-konco btn-block">Masuk</button>
-                                </div>
-                                <div class="form-group text-center">
-                                    <small><a href="#" data-toggle="modal" data-target="#modalPassword">Lupa password?</a></small>
-                                </div>
-                            </form>
+          <div class="navbar-nav ml-2">
+                <a href="#" class="btn btn-neutral" data-toggle="dropdown" type="button">Profil <img src="<?php echo base_url('assets/images/profile/userdummy/profile.jpg') ?>" style="border-radius: 50%; width: 1.5rem ; height: 1.5rem;"></a>
+                <ul class="dropdown-menu dropdown-menu-right mt-0">
+                        <li class="px-3 py-2">
+                            <div class=" text-left">
                         </li>
-                    </ul>
+                </ul>
           </div>
     </div>
   </div>
