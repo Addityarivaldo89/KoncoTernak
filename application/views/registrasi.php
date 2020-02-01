@@ -8,7 +8,10 @@
   <!-- onLoad, fungsi js untuk eksekusi fungsi yang dibuat sebelumnya saat page dimuat-->
   <body onLoad="scrlsts()">
 
-  <?php $this->load->view("_parts/navbar.php") ?>
+
+  <?php $this->load->view("_parts/navbar.php"); ?>
+  
+
   <!--      LETAKKAN KONTEN DISINI        -->
           <div class="row mt-5 pt-4" style="height: 90vh; width: 101vw; background-color: #e9e9e9">
             <div class="col-5" style="background-color: #e9e9e9;">
