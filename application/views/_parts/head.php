@@ -19,6 +19,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <link href="<?php echo base_url('assets/res/css/bootstrap.min.css') ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/res/css/konco.css') ?>" rel="stylesheet">
     <script src="<?php echo base_url('assets/res/js/jquery.min.js') ?>"></script>
     <script src="<?php echo base_url('assets/res/js/bootstrap.min.js') ?>"></script>
     <script src="<?php echo base_url('assets/res/js/jarallax.min.js') ?>"></script>
