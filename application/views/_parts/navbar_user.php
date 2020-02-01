@@ -38,7 +38,7 @@
 
           <!-- Button submit -->
           <div class="navbar-nav ml-2">
-                <a href="#" class="btn btn-neutral" data-toggle="dropdown" type="button">Profil <img src="<?php echo base_url('assets/images/profile/userdummy/profile.jpg') ?>" style="border-radius: 50%; width: 1.5rem ; height: 1.5rem;"></a>
+                <a href="#" class="btn btn-secondary" data-toggle="dropdown" type="button">Profil <img src="<?php echo base_url('assets/images/profile/userdummy/profile.jpg') ?>" style="border-radius: 50%; width: 1.5rem ; height: 1.5rem;"></a>
                 <ul class="dropdown-menu dropdown-menu-right mt-0">
                         <li class="px-3 py-2">
                             <div class=" text-left">
