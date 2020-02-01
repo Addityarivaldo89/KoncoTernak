@@ -29,7 +29,7 @@
             <form class="form-inline">
               <!-- Form -->
               <div class="input-group">                    
-                  <input type="text" class="form-control content" name="cari" placeholder="cari" style="width: 53vw; margin-left: 13vw">
+                  <input type="text" class="form-control content" name="cari" placeholder="cari" style="width: 53vw; margin-left: 13.2vw">
                   <div class="input-group-append">
                       <a href="#" type="button" class="btn btn-secondary"><img src="<?php echo base_url('assets/images/find.png') ?>" height="20"></a>
                   </div>
@@ -49,7 +49,7 @@
                             </div>
                             <hr>
                             <div>
-                                <a class="btn btn-outline-secondary text-left" style="width:100%">Transaksi</a>
+                                <a class="btn btn-outline-konco text-left" style="width:100%;">Transaksi </a>
                             </div>
                         </li>
                 </ul>
