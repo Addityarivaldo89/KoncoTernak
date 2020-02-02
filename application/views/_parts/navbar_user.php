@@ -14,7 +14,7 @@
               <!-- Bagian item dari dropdown menu, bisa link individual atau list. -->
               <div class="dropdown-menu dropdown-menu-left">
                 <a href="/konco/artikel" class="dropdown-item text-center">ARTIKEL</a>
-                <a href="#" class="dropdown-item text-center">JUAL-BELI</a>
+                <a href="/konco/market" class="dropdown-item text-center">JUAL-BELI</a>
               </div>
         </div>
 
