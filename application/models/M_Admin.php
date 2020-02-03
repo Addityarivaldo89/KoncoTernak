@@ -21,6 +21,14 @@ class M_Admin extends CI_Model {
         }
     }
 
+    public function hapus_data($where, $table)
+    {
+        $this->db->where($where);
+        $this->db->delete($table);
+        
+        
+    }
+
 }
 
 /* End of file M_Admin.php */

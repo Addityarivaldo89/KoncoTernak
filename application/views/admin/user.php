@@ -51,8 +51,8 @@
                 } ?>
             </td>
             <td>
-                <?php echo anchor('crud/edit/'.$u->id_user,'Edit'); ?>
-                <?php echo anchor('crud/hapus/'.$u->id_user,'Hapus'); ?>
+                <?php echo anchor('admin/edit/'.$u->id_user,'Edit'); ?>
+                <?php echo anchor('admin/hapus/'.$u->id_user,'Hapus'); ?>
             </td>
         <?php } ?>
         </tr>
