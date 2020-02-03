@@ -12,7 +12,13 @@ class Admin extends CI_Controller {
 	public function index()
 	{
         // load view admin/overview.php
-        $data['total_data'] = $this->M_Admin->hitData();
-        $this->load->view("admin/overview.php",$data);
-	}
+        $this->load->view("admin/overview");
+        }
+        
+        public function user()
+        {
+                $data['user'] = $this->M_Admin->tampil_data()->result();
+                $this->load->view('admin/user',$data);
+                
+        }
 }

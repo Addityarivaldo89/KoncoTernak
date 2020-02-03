@@ -4,19 +4,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_Admin extends CI_Model {
 
-    public function hitData()
+    public function tampil_data()
     {
-        $this->db->select('COUNT(produk.id_produk) as total'); 
-        $this->db->join('user','user.id_user = produk.id_user');
-        $this->db->join('ternak', 'ternak.id_ternak = produk.id_ternak'); 
-        $this->db->group_by('id_produk');
-        $query = $this->db->get('produk');
-        if($query->num_rows()>0)
-        {
-        return $query->result();
-        }else{
-            return 0;
-        }
+        return $this->db->get('user');
     }
 
     public function hitUser()
