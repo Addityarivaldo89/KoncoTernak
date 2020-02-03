@@ -29,6 +29,7 @@
             <th>No</th>
             <th>Nama</th>
             <th>Username</th>
+            <th>Email</th>
             <th>Hak Akses</th>
             <th>Aksi</th>
         </tr>
@@ -42,6 +43,7 @@
             <td><?php echo $no++ ?></td>
             <td><?php echo $u->nama ?></td>
             <td><?php echo $u->username ?></td>
+            <td><?php echo $u->email ?></td>
             <td><?php if ($u->id_level == 1) {
                 echo "User"; 
             }else{ 

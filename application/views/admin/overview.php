@@ -48,7 +48,7 @@
 				</div>
 				<div class="mr-5">User</div>
 				</div>
-				<a class="card-footer text-white clearfix small z-1" href="#">
+				<a class="card-footer text-white clearfix small z-1" href="<?php echo site_url('admin/user') ?>">
 				<span class="float-left">View Details</span>
 				<span class="float-right">
 					<i class="fas fa-angle-right"></i>
