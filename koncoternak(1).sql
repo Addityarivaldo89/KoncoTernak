@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 01, 2020 at 03:40 PM
--- Server version: 10.1.37-MariaDB
--- PHP Version: 7.3.1
+-- Generation Time: Feb 03, 2020 at 06:48 PM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 7.3.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -102,18 +102,21 @@ CREATE TABLE `transaksi` (
 
 CREATE TABLE `user` (
   `id_user` int(11) NOT NULL,
+  `nama` varchar(25) NOT NULL,
+  `email` varchar(35) NOT NULL,
   `username` varchar(25) NOT NULL,
-  `password` text NOT NULL,
-  `id_level` int(11) NOT NULL
+  `password` varchar(25) NOT NULL,
+  `id_level` int(11) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id_user`, `username`, `password`, `id_level`) VALUES
-(1, 'addit', 'e10adc3949ba59abbe56e057f20f883e', 1),
-(2, 'admin', '21232f297a57a5a743894a0e4a801fc3', 2);
+INSERT INTO `user` (`id_user`, `nama`, `email`, `username`, `password`, `id_level`) VALUES
+(1, 'Additya', 'addityarivaldo89@gmail.com', 'addit', 'e10adc3949ba59abbe56e057f', 1),
+(2, 'Super Konco', 'konockumantul@gmail.com', 'admin', '21232f297a57a5a743894a0e4', 2),
+(3, 'Salah', 'salahmulu@gmail.com', 'salahdah', 'salahwae', 1);
 
 --
 -- Indexes for dumped tables
@@ -185,7 +188,7 @@ ALTER TABLE `transaksi`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables
