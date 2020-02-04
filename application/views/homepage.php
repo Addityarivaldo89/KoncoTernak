@@ -11,6 +11,7 @@
   <?php $this->load->view("_parts/navbar.php") ?>
 
   <!--      LETAKKAN KONTEN DISINI        -->
+  <div class="container-fluid mt-5 px-0">
     <div id="carousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -37,14 +38,6 @@
 
   <div class="container-fluid mt-4 d-block w-100">
       <hr class="hrt" width="95%" >
-      
-      <script> 
-        $(document).ready(function() { 
-            $("button").click(function() { 
-                $(document).scrollTop($(document).height()); 
-            }); 
-        }); 
-      </script> 
       
       <p class="text-center text-secondary" style="font-size: 1.5rem">INFO LEBIH LANJUT<br> 
         
@@ -98,6 +91,6 @@
       </div>
     </div>
   </div>
-
+  </div>
   </body>
 </html>
