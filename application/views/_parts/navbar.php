@@ -1,5 +1,5 @@
 <?php 
-  $session = 1;
+  $session = 0;
 
   if ($session == 0){
     $this->load->view("_parts/navbar_guest.php");
