@@ -25,36 +25,34 @@
 
 		</div>
         <!-- /.container-fluid -->
-        <form action="<?php echo base_url(). 'admin/update'; ?>" method="post">
-        <?php foreach($user as $u){ ?>
+        <form action="<?php echo base_url(). 'admin/tambah_aksi'; ?>" method="post">
         <div class="ml-3">
             <div class="font-weight-lighter mb-1" style="font-size: 0.8rem">
                 Nama
             </div>
             <div class="form-group mb-2">
-                <input style="height: 2.5rem" value="<?php echo $u->nama ?>" name="nama" placeholder="Masukkan Nama" class="form-control form-control-sm" type="text" required="true">
+                <input style="height: 2.5rem" name="nama" placeholder="Masukkan Nama" class="form-control form-control-sm" type="text" required="true">
             </div>
             <div class="font-weight-lighter mb-1" style="font-size: 0.8rem">
                 Username
             </div>
             <div class="form-group mb-2">
-                <input style="height: 2.5rem" value="<?php echo $u->username ?>" name="username" placeholder="Masukkan Username" class="form-control form-control-sm" type="text" required="true">
+                <input style="height: 2.5rem" name="username" placeholder="Masukkan Username" class="form-control form-control-sm" type="text" required="true">
             </div>
             <div class="font-weight-lighter mb-1" style="font-size: 0.8rem">
                 Email 
             </div>
             <div class="form-group">
-                <input style="height: 2.5rem" value="<?php echo $u->email ?>" name="email" placeholder="Masukkan Email" class="form-control form-control-sm" type="text" required="true">
+                <input style="height: 2.5rem" name="email" placeholder="Masukkan Email" class="form-control form-control-sm" type="email" required="true">
             </div>
             <div class="font-weight-lighter mb-1" style="font-size: 0.8rem">
                 Kata Sandi 
             </div>
             <div class="form-group">
-                <input style="height: 2.5rem" value="<?php echo $u->password ?>" name="password" placeholder="Masukkan Kata Sandi" class="form-control form-control-sm" type="password" required="true">
+                <input style="height: 2.5rem" name="password" placeholder="Masukkan Kata Sandi" class="form-control form-control-sm" type="password" required="true">
             </div>
         </div>
-            <button type="submit" value="Simpan" class="btn btn-konco mb-2" style="position: relative; left: 5%; width: 21rem">Update</button>
-        <?php } ?>
+            <button type="submit" value="Simpan" class="btn btn-konco btn-sm" style="position: relative; left: 5%; width: 21rem">Tambah</button>
         </form>
 
 		<!-- Sticky Footer -->

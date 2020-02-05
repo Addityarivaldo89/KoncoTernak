@@ -14,32 +14,40 @@
           ? <a href="#" class="font-weight-bold text-black-50">Masuk</a>
         </div>
         <hr style="width:95%; background-color:#a1a1a1 !important; height:1px;" />
-        <form action="reg.php" method="post">
+
+        <!-- awal form -->
+        <form action="<?php echo base_url(). 'admin/tambah_aksiR'; ?>" method="post">
           <div class="ml-3">
             <div class="font-weight-lighter mb-1" style="font-size: 0.8rem">
               Nama Asli
             </div>
             <div class="form-group mb-2">
-              <input style="height: 2.5rem" id="inputnama" placeholder="Nama Asli" class="form-control form-control-sm" type="text" required="true">
+            <input style="height: 2.5rem" name="nama" placeholder="Masukkan Nama" class="form-control form-control-sm" type="text" required="true">
+            </div>
+            <div class="font-weight-lighter mb-1" style="font-size: 0.8rem">
+              Username
+            </div>
+            <div class="form-group mb-2">
+            <input style="height: 2.5rem" name="username" placeholder="Masukkan Username" class="form-control form-control-sm" type="text" required="true">
             </div>
             <div class="font-weight-lighter mb-1" style="font-size: 0.8rem">
               Email
             </div>
             <div class="form-group">
-              <input style="height: 2.5rem" id="inputemail" placeholder="Email" class="form-control form-control-sm" type="text" required="true">
+            <input style="height: 2.5rem" name="email" placeholder="Masukkan Email" class="form-control form-control-sm" type="email" required="true">
             </div>
             <div class="font-weight-lighter mb-1" style="font-size: 0.8rem">
               Kata Sandi
             </div>
             <div class="form-group">
-              <input style="height: 2.5rem" id="inputpassword" placeholder="Kata Sandi" class="form-control form-control-sm" type="password" required="true">
+            <input style="height: 2.5rem" name="password" placeholder="Masukkan Kata Sandi" class="form-control form-control-sm" type="password" required="true">
             </div>
-            <div class="font-weight-lighter mb-1" style="font-size: 0.8rem">
+            <!-- <div class="font-weight-lighter mb-1" style="font-size: 0.8rem">
               Konfirmasi Kata Sandi
             </div>
             <div class="form-group">
-              <input style="height: 2.5rem" id="inputpassword" placeholder="Ketik Ulang Kata Sandi" class="form-control form-control-sm" type="password" required="true">
-            </div>
+              <input style="height: 2.5rem" name="confirmpwd" placeholder="Ketik Ulang Kata Sandi" class="form-control form-control-sm" type="password" required="true">
+            </div> -->
           </div>
           <button type="submit" class="btn btn-konco mb-2" style="position: relative; left: 5%; width: 95%;">Daftar</button>
           <div class="text-secondary text-center" style="font-size: 0.8rem">
@@ -50,3 +58,17 @@
     </div>
   </div>
 </div>
+
+<!-- <script type="text/javascript">
+        $(function () {
+            $("#btnSubmit").click(function () {
+                var password = $("#password").val();
+                var confirmPassword = $("#confirmpwd").val();
+                if (password != confirmPassword) {
+                    alert("Passwords tidak sama.");
+                    return false;
+                }
+                return true;
+            });
+        });
+    </script> -->

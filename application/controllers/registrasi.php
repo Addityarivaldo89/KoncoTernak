@@ -2,7 +2,7 @@
 /**
 *
 */
-class registrasi extends CI_Controller
+class Registrasi extends CI_Controller
 {
     function index()
     {
