@@ -14,6 +14,46 @@ class Admin extends CI_Controller {
                 // load view admin/overview.php
                 $this->load->view("admin/overview");
         }
+
+        public function tambah()
+        {
+                $this->load->view('admin/user_tambah');
+                
+        }
+
+        public function tambah_aksi()
+        {
+                $nama = $this->input->post('nama');
+                $username = $this->input->post('username');
+                $email = $this->input->post('email');
+                $password = md5($this->input->post('password'));
+ 
+		$data = array(
+			'nama' => $nama,
+                        'username' => $username,
+                        'email' => $email,
+                        'password' => $password
+			);
+		$this->M_Admin->input_data($data,'user');
+		redirect('admin/user');
+        }
+
+        public function tambah_aksiR()
+        {
+                $nama = $this->input->post('nama');
+                $username = $this->input->post('username');
+                $email = $this->input->post('email');
+                $password = md5($this->input->post('password'));
+ 
+		$data = array(
+			'nama' => $nama,
+                        'username' => $username,
+                        'email' => $email,
+                        'password' => $password
+			);
+		$this->M_Admin->input_data($data,'user');
+		redirect('index');
+        }
         
         public function user()
         {
@@ -28,25 +68,19 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/user_edit',$data);
         }
 
-        public function hapus($id_user)
-        {
-                $where = array('id_user' => $id_user);
-		$this->M_Admin->hapus_data($where,'user');
-		redirect('admin/user');
-        }
-
         function update(){
                 $id_user = $this->input->post('id_user');
                 $nama = $this->input->post('nama');
                 $username = $this->input->post('username');
                 $email = $this->input->post('email');
-                $password = $this->input->post('password');
+                $password = md5($this->input->post('password'));
         
                 $data = array(
+                        'id_user' => $id_user,
                         'nama' => $nama,
                         'username' => $username,
                         'email' => $email,
-                        'password' => $password
+                        'password' => $password 
                 );
         
                 $where = array(
@@ -55,5 +89,12 @@ class Admin extends CI_Controller {
         
                 $this->M_Admin->update_data($where,$data,'user');
                 redirect('admin/user');
+        }
+
+        public function hapus($id_user)
+        {
+                $where = array('id_user' => $id_user);
+		$this->M_Admin->hapus_data($where,'user');
+		redirect('admin/user');
         }
 }

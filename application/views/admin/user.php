@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <?php $this->load->view("admin/_partials/head.php") ?>
-    <link rel="stylesheet" type="text/css" href="assets/res/DataTables/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">  
 </head>
 <body id="page-top">
 
@@ -21,9 +21,13 @@
         Jika anda ingin mengampilkan breadcrumb di halaman overview,
         silahkan hilangkan komentar (//) di tag PHP di bawah.
 		-->
-		<?php $this->load->view("admin/_partials/breadcrumb.php") ?>
+        <?php $this->load->view("admin/_partials/breadcrumb.php") ?>
         
-		<table class="table is-narrow table-striped data" id="tabeluser">
+        <a class="nav-link" href="<?php echo site_url('admin/tambah') ?>">
+            <i class="fas fa-fw fa-users"></i>
+            <span>Tambah User</span></a>
+        
+		<table class="display" id="tabeluser">
         <thead>
         <tr>
             <th>No</th>
@@ -78,7 +82,7 @@
 <?php $this->load->view("admin/_partials/js.php") ?>
     
 
-<script type="text/javascript" src="assets/res/DataTables/datatables.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
     $('#tabeluser').DataTable();
