@@ -1,6 +1,5 @@
 <!-- Parent navbar dan propertinya -->
-<nav class="navbar fixed-top navbar-expand-md bg-konco shadow-sm py-0 px-0">
-	<div class="container-fluid">
+<nav class="navbar fixed-top navbar-expand-md bg-konco shadow-sm py-0 px-0" style="width: 100%">
 
 		<!-- navbar item untuk dropdown menu -->
 		<div class="nav navbar-nav dropdown" id="navbarTogglerDemo2">
@@ -25,11 +24,11 @@
 
 
 		<!-- navbar item untuk Form query search dan submit button -->
-		<div class="collapse navbar-collapse" id="navbarCollapse">
-			<form class="form-inline">
+		<div class="collapse navbar-collapse" id="navbarCollapse" style="position: relative; right: 0px; width: 100%;">
+			<form class="form-inline" style="width:100%">
 				<!-- Form -->
-				<div class="input-group">
-					<input type="text" class="form-control content" name="cari" placeholder="cari" style="width: 55vw; margin-left: 6.9vw">
+				<div class="input-group" style="width: 100%;">
+					<input type="text" class="form-control content" name="cari" placeholder="cari" style="width: 25%;">
 					<div class="input-group-append">
 						<a href="#" type="button" class="btn btn-secondary"><img src="<?php echo base_url('assets/images/find.png') ?>" height="20"><i class="fa fa-search"></i></a>
 					</div>
@@ -37,7 +36,7 @@
 			</form>
 
 			<!-- Button submit -->
-			<div class="navbar-nav">
+			<div class="navbar-nav" style="position: relative; right: 5px">
 				<a href="/konco/registrasi" class="btn btn-outline-dark mx-2">Daftar</a>
 				<a href="#" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" type="button">Masuk</a>
 				<ul class="dropdown-menu dropdown-menu-right mt-0">
@@ -60,5 +59,4 @@
 				</ul>
 			</div>
 		</div>
-	</div>
 </nav>
